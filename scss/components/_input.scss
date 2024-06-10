@@ -1,38 +1,37 @@
-.input {
+.form {
   position: relative;
+  margin-top: 14px;
+  margin-bottom: 24px;
 
   &__label {
     position: absolute;
     top: 16px;
-    left: 42px;
+    left: 32px;
+    /*display: block;*/
   }
 
-  &__control {
-    padding: 8px 24px;
+  &__input {
+    padding: 16px 42px;
     width: 100%;
     font-size: 16px;
     line-height: 1.17;
-    border: 1px solid var(--color-secondary-dark);
-    border-radius: 8px;
-    background-color: transparent;
+    border: 1px auto var(--color-primary-brown);
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
 
     &:focus {
-      border-color: var(--color-brand-normal);
+      border-color: var(--color-primary-dark);
       outline: none;
     }
 
     &::placeholder {
-      color: var(--color-secondary-dark);
+      color: var(--color-primary-dark);
       font-size: 16px;
-      line-height: 1.17;
+      line-height: 1.18;
     }
 
     &:focus::placeholder {
       color: var(--color-primary-dark);
-    }
-
-    @media screen and (min-width: $bp-tablet) {
-      padding: 16px 42px;
     }
   }
 }

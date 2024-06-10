@@ -1,0 +1,34 @@
+.services-section {
+  &__title {
+    color: var(--color-brand-secondary);
+    padding-top: 36px;
+
+    &::after {
+      display: block;
+      /*width: 130px;
+  height: 2px;
+  background-color: var(--color-brand-secondary);*/
+      content: "---";
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 16px 16px;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    max-width: 300px;
+    padding-bottom: 38px;
+  }
+
+  &__box-title {
+    text-align: center;
+  }
+}
